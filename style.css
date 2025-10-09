@@ -7,5 +7,24 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #242424;
+    display: flex;
+}
+
+.barra-lateral {
+    width: 100px;
+    height: 100%;
+    background-color: black; 
+}
+
+.chat-container {
+    flex: 1
+}
+
+.header {
+    height:60px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
