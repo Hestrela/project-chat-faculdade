@@ -1,11 +1,11 @@
 <?php
 require_once 'vendor/autoload.php';
 
-require_once 'database.php';
-
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 
 $dotenv->load();
+
+require_once 'database.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST" && !empty(trim($_POST['pergunta']))) {
     $pergunta_recebida = trim($_POST["pergunta"]);
