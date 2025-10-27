@@ -1,4 +1,10 @@
 <?php
+require_once 'vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+
+$dotenv->load();
+
 $host = $_ENV['DB_HOST']; // ou o host do seu DB
 $dbname = $_ENV['DB_NAME'];
 $user = $_ENV['USER']; // ex: 'root'
